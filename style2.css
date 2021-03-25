@@ -1,33 +1,123 @@
-#header {
-    background-color:navy;
-  
-} 
+header {
+  position: fixed;
+  background-color: yellowgreen;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  padding: 1em;
+  width: 100%
+}
+
+header::after {
+  clear: both;
+  content: '';
+  display: table;
+}
 
 #header-img {
-    
-    width: 250px;}
-
-#nav-bar {
-
-}
-#h1 {text-align: center;}
-
-.container {
-
-
+  width: 150px;
+  height: auto;
+  float: left;
 }
 
-    .nav_link {
+nav ul{
+  float: right;
+  margin-right: 2em;
+}
+nav li{
+  display: inline;
+  padding: 1em;
+  display: inline-block;
+}
 
-    }
-#link_id1{ width: 900px;
-           text-align: start;
-        }  
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-#link_id2{
-text-align: right;}
+a:visited {
+  color: inherit;
+}
 
-#link_id3   {width: 900px;}
+#about-us {
 
-#video {width: 100%;
-    justify-self: right;}
+  color: yellowgreen;
+  Padding: 20em;
+  background-image: url(https://image.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-44444.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+main {
+  font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+#videos {
+  text-align: center;
+  padding: 3.5em;
+  }
+
+#video {
+  margin: 0 auto;
+}
+
+img {
+  width: 20em;
+  height: 14em;
+  margin: 10px;
+}
+#photos {
+   background-color:yellowgreen;
+   padding: 3em;
+}
+#photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input{
+  height: 2em;
+  border: none;
+  transition: 0.1s;
+}
+input:hover {
+    border-bottom: 2px solid black;
+}
+#form {
+  text-align: center;
+  padding: 2em;
+}
+
+#submit {
+  border-radius: 5px;
+  padding: 0.5em;
+  font-family: 'Exo 2', sans-serif;
+  background-color: yellowgreen;
+  border: none;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Exo 2', sans-serif;
+}
+
+
+
+footer li {
+  display: inline;
+  padding: 2em;
+}
+
+@media (max-width: 550px ){
+  h1 {
+    font-size: 1.25em;
+  }
+}
